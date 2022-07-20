@@ -12,11 +12,22 @@ class WeatherScreen extends StatefulWidget {
 }
 
 class _WeatherScreenState extends State<WeatherScreen> {
+  String cityName;
+  double temp;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    print(widget.parseWeatherData);
+    updateData(widget.parseWeatherData);
+  }
+
+  void updataData(dynamic weatherData) {
+    temp = weatherData['main']['temp'];
+    cityName = weatherData['name'];
+
+    print(temp);
+    print(cityName);
   }
 
   @override
