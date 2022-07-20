@@ -35,11 +35,11 @@ class _LoadingState extends State<Loading> {
     var weatherData = await network.getJsonData();
     print(weatherData);
 
-    Navigator.push(context, MaterialPageRoute(builder: (context){
-      return WeatherScreen();
-    }))
-
-
+    Navigator.push(context, MaterialPageRoute(builder: (context) {
+      return WeatherScreen(
+        parseWeatherData: weatherData,
+      );
+    }));
   }
 
   // void fetchData() async {

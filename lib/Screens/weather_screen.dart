@@ -1,12 +1,26 @@
 import 'package:flutter/cupertino.dart';
+import'package:flutter/material.dart';
 
 class WeatherScreen extends StatefulWidget {
-import'package:flutter/material.dart';
-  const WeatherScreen({Key? key}) : super(key: key);
+
+  WeatherScreen({this.parseWeatherData});
+  // 왜 생성자에 컬리브레이스를 하지?
+  // 
+  final parseWeatherData;
+  
+  @override
   _WeatherScreenState createState() => _WeatherScreenState();
 }
 
 class _WeatherScreenState extends State<WeatherScreen> {
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print(widget.parseWeatherData);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +41,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
               ),),
             ],
           ),))
-          )
+          );
     );
   }
 }
