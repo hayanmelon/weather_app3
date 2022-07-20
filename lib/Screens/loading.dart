@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weatherapp/data/network.dart';
 import 'package:weatherapp/data/my_location.dart';
+import 'package:weatherapp/Screens/weather_screen.dart';
 
 const apikey = '060d5920c116d33cba156d0b8664cb37';
 
@@ -33,6 +34,12 @@ class _LoadingState extends State<Loading> {
 
     var weatherData = await network.getJsonData();
     print(weatherData);
+
+    Navigator.push(context, MaterialPageRoute(builder: (context){
+      return WeatherScreen();
+    }))
+
+
   }
 
   // void fetchData() async {
