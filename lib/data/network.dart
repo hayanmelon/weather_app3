@@ -7,7 +7,7 @@ class Network {
 
   Future<dynamic> getJsonData() async {
     print('-- getJsonData 시작 -- ');
-    http.Response response = await http.get(Uri.parse(url));
+    http.Response response = await http.read(Uri.parse(url));
     if (response.statusCode == 200) {
       String jsonData = response.body;
       var parsingData = jsonDecode(jsonData);
