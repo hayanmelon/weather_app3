@@ -3,15 +3,12 @@ import 'package:weatherapp/data/network.dart';
 
 import 'package:weatherapp/data/my_location.dart';
 
-import 'package:weatherapp/data/my_location.dart';
-
 class Loading extends StatefulWidget {
   @override
   _LoadingState createState() => _LoadingState();
 }
 
 class _LoadingState extends State<Loading> {
-
   double? latitude3;
   double? longitude3;
 
@@ -19,10 +16,10 @@ class _LoadingState extends State<Loading> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    getLocation();
+    //getLocation();
   }
 
-  void getLocation() async{
+  void getLocation() async {
     MyLocation myLocation = MyLocation();
     await myLocation.getMyCurrentLocation();
     latitude3 = myLocation.latitude2;
@@ -61,8 +58,8 @@ class _LoadingState extends State<Loading> {
       child: Text('Button'),
       onPressed: () {
         print('preesed');
+        getLocation();
       },
     )));
   }
 }
-
