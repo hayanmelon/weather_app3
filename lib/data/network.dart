@@ -25,7 +25,7 @@ class Network {
         print(response.statusCode);
       }
     } catch (e) {
-      var jsonText = await rootBundle.loadString('assets/shop.json');
+      var jsonText = await rootBundle.loadString('json/practice.json');
       var parsingData = jsonDecode(jsonText);
       return parsingData;
     }
