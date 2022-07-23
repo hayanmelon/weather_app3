@@ -117,6 +117,11 @@ class _WeatherScreenState extends State<WeatherScreen> {
                               color: Colors.white,
                             ),
                           ),
+                          Row(
+                            children: [
+                              SvgPicture.asset('svg/climacon-sun.svg)
+                            ],
+                          )
                         ],
                       )
                     ],
