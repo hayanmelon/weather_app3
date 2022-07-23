@@ -66,8 +66,8 @@ class _WeatherScreenState extends State<WeatherScreen> {
           ),
           Padding(
             padding: EdgeInsets.all(50.0),
-            child: ListView(
-              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
                   child: Column(
@@ -79,7 +79,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: 150),
+                          SizedBox(height: 100),
                           Text(
                             'Seoul',
                             style: GoogleFonts.lato(
