@@ -139,39 +139,42 @@ class _WeatherScreenState extends State<WeatherScreen> {
                   ),
                 ),
 
-                Column(
-                  children: [
-                    Divider(
-                      height: 15.0,
-                      thickness: 2.0,
-                      color: Colors.white,
-                    ),
-                    Row(
-                      children: [
-                        Column(
-                          children: [
-                            Text('AQI',
-                                style: GoogleFonts.lato(
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.w300,
-                                  color: Colors.white,
-                                )),
-                            Image.asset(
-                              'image/bad.png',
-                              width: 37.0,
-                              height: 35.0,
-                            ),
-                            Text('매우 나쁨',
-                                style: GoogleFonts.lato(
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.w300,
-                                  color: Colors.white,
-                                )),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Column(
+                    children: [
+                      Divider(
+                        height: 15.0,
+                        thickness: 2.0,
+                        color: Colors.white,
+                      ),
+                      Row(
+                        children: [
+                          Column(
+                            children: [
+                              Text('AQI',
+                                  style: GoogleFonts.lato(
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white,
+                                  )),
+                              Image.asset(
+                                'image/bad.png',
+                                width: 37.0,
+                                height: 35.0,
+                              ),
+                              Text('매우 나쁨',
+                                  style: GoogleFonts.lato(
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.w300,
+                                    color: Colors.white,
+                                  )),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ), // 구분선 아래
               ],
             ),
