@@ -147,6 +147,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                       color: Colors.white,
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Column(
                           children: [
