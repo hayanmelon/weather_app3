@@ -211,7 +211,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 )),
-                            SizedBox(heig
                             SizedBox(height: 5.0),
                             Text('ug/m3',
                                 style: GoogleFonts.lato(
