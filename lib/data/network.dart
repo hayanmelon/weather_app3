@@ -1,4 +1,5 @@
 import 'package:http/http.dart' as http;
+import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
 
 class Network {
@@ -19,7 +20,9 @@ class Network {
       var parsingData = jsonDecode(jsonData);
       return parsingData;
     } else {
-      print(response.statusCode);
+      var jsonText = await rootBundle.loadString('assets/shop.json');
+      var parsingData = jsonDecode(jsonText);
+      return parsingData;
     }
   }
 }
