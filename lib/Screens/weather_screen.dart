@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:timer_builder/timer_builder.dart';
 import 'package:intl/intl.dart';
@@ -119,7 +120,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                           ),
                           Row(
                             children: [
-                              SvgPicture.asset('svg/climacon-sun.svg)
+                              SvgPicture('svg/climacon-sun.svg');
                             ],
                           )
                         ],
