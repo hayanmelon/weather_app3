@@ -148,7 +148,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                     ),
                     Row(
                       children: [
-                        Text('AQI 대기질 지수',
+                        Text('AQI',
                             style: GoogleFonts.lato(
                               fontSize: 14.0,
                               fontWeight: FontWeight.w300,
