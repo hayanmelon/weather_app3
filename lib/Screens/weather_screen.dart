@@ -121,7 +121,13 @@ class _WeatherScreenState extends State<WeatherScreen> {
                           Row(
                             children: [
                               SvgPicture.asset('svg/climacon-sun.svg'),
-                              Text('Clear Sky', style: TextStyle(fontStyle: GoogleFonts.lato, fontSize: 16.0, color: Colors.white)),
+                              Text(
+                            'Clear Sky',
+                            style: GoogleFonts.lato(
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.w300,
+                              color: Colors.white,
+                            ),
                             ],
                           )
                         ],
