@@ -81,7 +81,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                         children: [
                           SizedBox(height: 100),
                           Text(
-                            '$citiyName',
+                            '$cityName',
                             style: GoogleFonts.lato(
                               fontSize: 35.0,
                               fontWeight: FontWeight.bold,
