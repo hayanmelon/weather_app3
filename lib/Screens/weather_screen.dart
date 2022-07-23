@@ -120,7 +120,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                           ),
                           Row(
                             children: [
-                              SvgPicture('svg/climacon-sun.svg');
+                              SvgPicture.asset('svg/climacon-sun.svg');
                             ],
                           )
                         ],
