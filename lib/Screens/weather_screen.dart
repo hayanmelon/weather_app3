@@ -112,7 +112,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                           Text(
                             '18\u2103',
                             style: GoogleFonts.lato(
-                              fontSize: 85.0,
+                              fontSize: 60.0,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),
