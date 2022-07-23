@@ -156,7 +156,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                             )),
                         Image.asset(
                           'image/bad.png',
-                          widht: 37.0,
+                          width: 37.0,
                           height: 35.0,
                         ),
                         Text('매우 나쁨',
