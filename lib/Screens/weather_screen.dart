@@ -146,7 +146,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                       thickness: 2.0,
                       color: Colors.white,
                     ),
-                    Row(
+                    Column(
                       children: [
                         Text('AQI',
                             style: GoogleFonts.lato(
