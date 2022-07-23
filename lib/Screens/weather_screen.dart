@@ -198,20 +198,22 @@ class _WeatherScreenState extends State<WeatherScreen> {
                         ),
                         Column(
                           children: [
-                            Text('AQI',
+                            Text('초미세먼지',
                                 style: GoogleFonts.lato(
                                   fontSize: 14.0,
                                   fontWeight: FontWeight.w300,
                                   color: Colors.white,
                                 )),
                             SizedBox(height: 5.0),
-                            Image.asset(
-                              'image/bad.png',
-                              width: 37.0,
-                              height: 35.0,
-                            ),
+                            Text('84.0',
+                                style: GoogleFonts.lato(
+                                  fontSize: 24.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                )),
+                            SizedBox(heig
                             SizedBox(height: 5.0),
-                            Text('매우 나쁨',
+                            Text('ug/m3',
                                 style: GoogleFonts.lato(
                                   fontSize: 14.0,
                                   fontWeight: FontWeight.bold,
