@@ -109,6 +109,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
 
                       // 기온, 기온아이콘콘
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             '18\u2103',
@@ -121,6 +122,9 @@ class _WeatherScreenState extends State<WeatherScreen> {
                           Row(
                             children: [
                               SvgPicture.asset('svg/climacon-sun.svg'),
+                              SizedBox(
+                                width: 10.0,
+                              ),
                               Text('Clear Sky',
                                   style: GoogleFonts.lato(
                                     fontSize: 18.0,
