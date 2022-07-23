@@ -156,15 +156,63 @@ class _WeatherScreenState extends State<WeatherScreen> {
                                   fontWeight: FontWeight.w300,
                                   color: Colors.white,
                                 )),
+                            SizedBox(height: 5.0),
                             Image.asset(
                               'image/bad.png',
                               width: 37.0,
                               height: 35.0,
                             ),
+                            SizedBox(height: 5.0),
                             Text('매우 나쁨',
                                 style: GoogleFonts.lato(
                                   fontSize: 14.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                )),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Text('AQI',
+                                style: GoogleFonts.lato(
+                                  fontSize: 14.0,
                                   fontWeight: FontWeight.w300,
+                                  color: Colors.white,
+                                )),
+                            SizedBox(height: 5.0),
+                            Image.asset(
+                              'image/bad.png',
+                              width: 37.0,
+                              height: 35.0,
+                            ),
+                            SizedBox(height: 5.0),
+                            Text('매우 나쁨',
+                                style: GoogleFonts.lato(
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                )),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Text('AQI',
+                                style: GoogleFonts.lato(
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.w300,
+                                  color: Colors.white,
+                                )),
+                            SizedBox(height: 5.0),
+                            Image.asset(
+                              'image/bad.png',
+                              width: 37.0,
+                              height: 35.0,
+                            ),
+                            SizedBox(height: 5.0),
+                            Text('매우 나쁨',
+                                style: GoogleFonts.lato(
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 )),
                           ],
