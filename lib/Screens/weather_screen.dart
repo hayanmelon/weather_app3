@@ -78,7 +78,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: 100),
+                          SizedBox(height: 150),
                           Text(
                             'Seoul',
                             style: GoogleFonts.lato(
@@ -100,9 +100,9 @@ class _WeatherScreenState extends State<WeatherScreen> {
                                 DateFormat(' - EEEE, ').format(date),
                                 style: GoogleFonts.lato(fontSize: 16.0, color: Colors.white),
                               ),
-                              Text(DateFormat('d MMM, yyy').format(date), style: GoogleFonts.lato(fontSize: 16.0, color: Colors.white)),
                             ],
-                          )
+                          ),
+                          Text(DateFormat('d MMM, yyy').format(date), style: GoogleFonts.lato(fontSize: 16.0, color: Colors.white)),
                         ],
                       ),
 
