@@ -66,8 +66,8 @@ class _WeatherScreenState extends State<WeatherScreen> {
           ),
           Padding(
             padding: EdgeInsets.all(50.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: ListView(
+              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
                   child: Column(
