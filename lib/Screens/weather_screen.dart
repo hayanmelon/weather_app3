@@ -66,82 +66,82 @@ class _WeatherScreenState extends State<WeatherScreen> {
           ),
           Container(
             padding: EdgeInsets.all(50.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Expanded(
-                  child: Column(
-                    //구분선 위
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // 지명, 날짜, 시간
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 150),
-                          Text(
-                            'Seoul',
-                            style: GoogleFonts.lato(
-                              fontSize: 35.0,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Column(
+                      //구분선 위
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // 지명, 날짜, 시간
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 150),
+                            Text(
+                              'Seoul',
+                              style: GoogleFonts.lato(
+                                fontSize: 35.0,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
                             ),
-                          ),
-                          Row(
-                            children: [
-                              TimerBuilder.periodic((Duration(minutes: 1)), builder: (context) {
-                                print('${getSystemTime()}');
-                                return Text(
-                                  '${getSystemTime()}',
+                            Row(
+                              children: [
+                                TimerBuilder.periodic((Duration(minutes: 1)), builder: (context) {
+                                  print('${getSystemTime()}');
+                                  return Text(
+                                    '${getSystemTime()}',
+                                    style: GoogleFonts.lato(fontSize: 16.0, color: Colors.white),
+                                  );
+                                }),
+                                Text(
+                                  DateFormat(' - EEEE, ').format(date),
                                   style: GoogleFonts.lato(fontSize: 16.0, color: Colors.white),
-                                );
-                              }),
-                              Text(
-                                DateFormat(' - EEEE, ').format(date),
-                                style: GoogleFonts.lato(fontSize: 16.0, color: Colors.white),
-                              ),
-                            ],
-                          ),
-                          Text(DateFormat('d MMM, yyy').format(date), style: GoogleFonts.lato(fontSize: 16.0, color: Colors.white)),
-                        ],
-                      ),
-
-                      // 기온, 기온아이콘콘
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            '18\u2103',
-                            style: GoogleFonts.lato(
-                              fontSize: 60.0,
-                              fontWeight: FontWeight.w300,
-                              color: Colors.white,
+                                ),
+                              ],
                             ),
-                          ),
-                          Row(
-                            children: [
-                              SvgPicture.asset('svg/climacon-sun.svg'),
-                              SizedBox(
-                                width: 10.0,
-                              ),
-                              Text('Clear Sky',
-                                  style: GoogleFonts.lato(
-                                    fontSize: 18.0,
-                                    fontWeight: FontWeight.w300,
-                                    color: Colors.white,
-                                  )),
-                            ],
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
+                            Text(DateFormat('d MMM, yyy').format(date), style: GoogleFonts.lato(fontSize: 16.0, color: Colors.white)),
+                          ],
+                        ),
 
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Column(
+                        // 기온, 기온아이콘콘
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '18\u2103',
+                              style: GoogleFonts.lato(
+                                fontSize: 60.0,
+                                fontWeight: FontWeight.w300,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Row(
+                              children: [
+                                SvgPicture.asset('svg/climacon-sun.svg'),
+                                SizedBox(
+                                  width: 10.0,
+                                ),
+                                Text('Clear Sky',
+                                    style: GoogleFonts.lato(
+                                      fontSize: 18.0,
+                                      fontWeight: FontWeight.w300,
+                                      color: Colors.white,
+                                    )),
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+
+                  Column(
                     children: [
                       Divider(
                         height: 15.0,
@@ -174,9 +174,9 @@ class _WeatherScreenState extends State<WeatherScreen> {
                         ],
                       ),
                     ],
-                  ),
-                ), // 구분선 아래
-              ],
+                  ), // 구분선 아래
+                ],
+              ),
             ),
           )
         ],
